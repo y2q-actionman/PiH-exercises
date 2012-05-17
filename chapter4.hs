@@ -19,14 +19,17 @@ v :: Bool -> Bool -> Bool
 True `v` True = True
 True `v` False = True
 False `v` True = True
-False `v` False = True
+False `v` False = False
+
 
 a :: Bool -> Bool -> Bool
 b1 `a` b2 = if (b1 == True && b2 == True) then True
             else False
 
+
 aa :: Bool -> Bool -> Bool
 b1 `aa` b2 = if b1 == True then b2
              else False
+
 
 mult = \x -> (\y -> (\z -> x * y * z))

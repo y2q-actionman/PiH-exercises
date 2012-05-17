@@ -11,6 +11,7 @@ a = b + c
     c = 1
     b = 1
 
+
 n = a `div` length xs
   where
      a = 10
@@ -28,7 +29,7 @@ myinit2 x = reverse (tail (reverse x))
 second :: [a] -> a
 second xs = head (tail xs)
 
-swap :: (a, b) -> (b, a)o
+swap :: (a, b) -> (b, a)
 swap (x,y) = (y,x)
 
 pair :: a -> b -> (a, b)
