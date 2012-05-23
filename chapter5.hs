@@ -1,3 +1,7 @@
+{-
+  not solved: 8
+-}
+
 square_sums = [x*x | x <- [1..100]]
 
 
