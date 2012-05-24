@@ -1,3 +1,7 @@
+{-
+  passed: 3,4,5
+-}
+
 import Parsing
 
 -- ex.1
@@ -70,7 +74,7 @@ factor =  do symbol "("
              return e
             +++ natural
 
--- ex.8
+-- ex.8 (NOT WORKING!)
 
 {-
 Matigai!

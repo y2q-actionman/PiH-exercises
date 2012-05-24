@@ -1,5 +1,5 @@
 {-
-  not solved: 2, 6
+  passed: 2, 6
 -}
 
 -- ex.1

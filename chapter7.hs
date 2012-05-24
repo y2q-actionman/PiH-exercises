@@ -1,5 +1,6 @@
 {-
-  not solved: 5, 8, 9
+  passed: 5
+  not solved: 8, 9
 -}
 
 -- ex.1
@@ -21,9 +22,10 @@ myany _ [] = False
 myany f (x:xs) | f x == False = myany f xs
                | otherwise = True
 
+-- NOT WORKING!!
 mytakeWhile :: (a -> Bool) -> [a] -> [a]
 mytakeWhile _ [] = []
-mytaleWhile f (x:xs) | f x == True = (x : mytakeWhile f xs)
+mytakeWhile f (x:xs) | f x == True = (x : mytakeWhile f xs)
                      | otherwise = []
                                    
 mydropWhile :: (a -> Bool) -> [a] -> [a]
